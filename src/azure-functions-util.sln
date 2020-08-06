@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionUtil", "AzureFunctionUtil\AzureFunctionUtil.csproj", "{DB299362-6EA1-4C14-8573-ED58AE7EB544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionUtil.Tests", "AzureFunctionUtil.Tests\AzureFunctionUtil.Tests.csproj", "{C8B7422D-D325-4FF3-971E-6489FF9AB232}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB299362-6EA1-4C14-8573-ED58AE7EB544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB299362-6EA1-4C14-8573-ED58AE7EB544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB299362-6EA1-4C14-8573-ED58AE7EB544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB299362-6EA1-4C14-8573-ED58AE7EB544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B7422D-D325-4FF3-971E-6489FF9AB232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B7422D-D325-4FF3-971E-6489FF9AB232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B7422D-D325-4FF3-971E-6489FF9AB232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B7422D-D325-4FF3-971E-6489FF9AB232}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C46CFF46-59A1-49BC-B33B-E3581BFAEF36}
+	EndGlobalSection
+EndGlobal

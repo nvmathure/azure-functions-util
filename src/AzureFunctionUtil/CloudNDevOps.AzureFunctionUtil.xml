@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CloudNDevOps.AzureFunctionUtil</name>
+    </assembly>
+    <members>
+        <member name="T:CloudNDevOps.AzureFunctionUtil.HttpHelper">
+            <summary>
+            Provides helper functions for processing HTTP Request
+            </summary>
+        </member>
+        <member name="T:CloudNDevOps.AzureFunctionUtil.ServiceBusHelper">
+            <summary>
+            Provides helper functions for processing Service Bus
+            </summary>
+        </member>
+        <member name="M:CloudNDevOps.AzureFunctionUtil.ServiceBusHelper.GetBody``1(Microsoft.Azure.ServiceBus.Message,System.Func{System.Byte[],System.String},Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Deserializes body of message into Object
+            </summary>
+            <typeparam name="TBodyType">Type of object to use for serialization</typeparam>
+            <param name="message">Service Bus Message to serialize</param>
+            <param name="encodingFunction">Function pointer used for converting Byte array to string</param>
+            <param name="settings">JSON Serialization Settings</param>
+            <returns>Instance of TBodyType after serialization</returns>
+        </member>
+        <member name="M:CloudNDevOps.AzureFunctionUtil.ServiceBusHelper.GetBody``1(Microsoft.Azure.ServiceBus.Message,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Deserializes body of message into Object using UTF8 Encoder
+            </summary>
+            <typeparam name="TBodyType"></typeparam>
+            <param name="message"></param>
+            <param name="settings">JSON Serialization Settings</param>
+            <returns></returns>
+        </member>
+        <member name="M:CloudNDevOps.AzureFunctionUtil.ServiceBusHelper.CopyUserPropertiesFrom(Microsoft.Azure.ServiceBus.Message,Microsoft.Azure.ServiceBus.Message,System.Text.RegularExpressions.Regex)">
+            <summary>
+            Copies user properties from one message to another with matching regular expression
+            </summary>
+            <param name="destinationMessage">Instance of <see cref="T:Microsoft.Azure.ServiceBus.Message"/> to which user properties needs to be copied</param>
+            <param name="sourceMessage">Instance of <see cref="T:Microsoft.Azure.ServiceBus.Message"/> from which user properties needs to be copied</param>
+            <param name="propertyMatchRegex">Regular expression to filter user properties</param>
+        </member>
+    </members>
+</doc>
